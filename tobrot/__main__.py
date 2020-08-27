@@ -96,7 +96,7 @@ if __name__ == "__main__" :
     #
     incoming_g_clear_handler = MessageHandler(
         g_clearme,
-        filters=Filters.command(["renewme@TM_PrivateBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["renewme@TM_PublicBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_g_clear_handler)
     #
@@ -140,13 +140,13 @@ if __name__ == "__main__" :
     #
     rename_message_handler = MessageHandler(
         rename_message_f,
-        filters=Filters.command(["rename@TM_PrivateBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["rename@TM_PublicBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(rename_message_handler)
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload@TM_PrivateBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload@TM_PublicBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
     #
@@ -158,7 +158,7 @@ if __name__ == "__main__" :
     #
     help_text_handler = MessageHandler(
         help_message_f,
-        filters=Filters.command(["help@TM_PrivateBot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["help@TM_PublicBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(help_text_handler)
     #
