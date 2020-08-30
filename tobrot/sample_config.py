@@ -46,7 +46,7 @@ class Config(object):
     GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize@TM_PublicBot")
     STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status@TM_PublicBot")
     SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumb@TM_PublicBot")
-    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumb")
+    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumb@TM_PublicBot")
     UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "True")
     PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl@TM_PublicBot")
     LOG_COMMAND = os.environ.get("LOG_COMMAND", "log@TM_PublicBot")
